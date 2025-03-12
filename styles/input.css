@@ -22,6 +22,8 @@
     background-color: var(--input-background);
     color: var(--neutral-0);
     font-family: "Inconsolata", monospace;
+
+    transition: 100ms;
 }
 
 .input-suport-text-container {
@@ -37,4 +39,14 @@
 
 .input-container input::placeholder {
     color: var(--neutral-300);
+}
+
+/* Estado de Focus e Hover do Input */
+.input-container input:hover {
+    background-color: var(--neutral-700);
+}
+
+.input-container input:focus {
+    outline: 2px solid var(--neutral-500);
+    outline-offset: 2px;
 }

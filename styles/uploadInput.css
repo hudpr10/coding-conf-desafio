@@ -13,6 +13,7 @@ input[type="file"] {
     background-color: var(--input-background);
 
     cursor: pointer;
+    transition: 100ms;
 }
 
 .input-upload-container span {
@@ -27,4 +28,9 @@ input[type="file"] {
     border-radius: 12px;
     border: 1px solid var(--neutral-500);
     
+}
+
+/* Estado de Focus e Hover do Input */
+.input-upload-container:hover {
+    background-color: var(--neutral-700);
 }
