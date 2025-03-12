@@ -1,0 +1,80 @@
+.ticket-container {
+    position: relative;
+}
+
+/* Parte de Cima do Ticket */
+.ticket-up-container {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.ticket-up-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ticket-up-logo-container h2 {
+    font-size: 2.5rem;
+}
+
+.ticket-up-container span {
+    position: absolute;
+
+    text-wrap: nowrap;
+
+    top: 58px;
+    left: 48px;
+    color: var(--neutral-300);
+}
+
+/* Parte de baixo do Ticket*/
+.ticket-down-container {
+    position: absolute;
+
+    bottom: 16px;
+    left: 16px;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.img-perfil {
+    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+}
+
+.perfil-texts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-perfil {
+    font-size: 2rem;
+}
+
+.github-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.github-container span {
+    color: var(--neutral-300);
+}
+
+/* Código */
+.ticket-code {
+    position: absolute;
+    top: 124px;
+    right: 8px;
+
+    color: var(--neutral-300);
+    font-size: 1.75rem;
+
+    transform: rotate(90deg);
+}

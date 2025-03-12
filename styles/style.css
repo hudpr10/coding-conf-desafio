@@ -4,6 +4,7 @@
 @import url("input.css");
 @import url("button.css");
 @import url("uploadInput.css");
+@import url("ticket.css");
 
 :root {
     --neutral-0: #fff;
@@ -25,8 +26,6 @@
 
 /* Estilização da Página e do Fundo */
 .main-container {
-    z-index: 1;
-
     font-family: "Inconsolata", monospace;
     color: var(--neutral-0);
 
@@ -44,6 +43,7 @@
 
 .background-details {
     position: absolute;
+    pointer-events: none;
 }
 
 .top-line {
@@ -68,4 +68,5 @@
 
 .multiple-lines {
     width: 97%;
+    height: 100vh;
 }
