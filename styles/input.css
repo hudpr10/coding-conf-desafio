@@ -1,0 +1,40 @@
+.input-container {
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-container label {
+    font-size: 1.25rem;
+}
+
+.input-container input {
+    border: 2px solid var(--neutral-500);
+    border-radius: 12px;
+    outline: none;
+    
+    font-family: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+
+    background-color: var(--input-background);
+    color: var(--neutral-0);
+    font-family: "Inconsolata", monospace;
+}
+
+.input-suport-text-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.input-suport-text-container span {
+    color: var(--neutral-300);
+    font-size: 0.75rem;
+}
+
+.input-container input::placeholder {
+    color: var(--neutral-300);
+}

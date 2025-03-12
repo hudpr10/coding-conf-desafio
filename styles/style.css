@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("logo.css");
+@import url("text.css");
+@import url("input.css");
+@import url("button.css");
+@import url("uploadInput.css");
+
+:root {
+    --neutral-0: #fff;
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-900: hsl(248, 70%, 10%);
+
+    --input-background: hsla(248, 70%, 10%, 0.4);
+
+    --orange-500: hsl(7, 88%, 67%); 
+    --orange-700: hsl(7, 71%, 60%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização da Página e do Fundo */
+.main-container {
+    z-index: 1;
+
+    font-family: "Inconsolata", monospace;
+    color: var(--neutral-0);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    background-image: url("/assets/images/background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    height: 100vh;
+}
+
+.background-details {
+    position: absolute;
+}
+
+.top-line {
+    top: 40px;
+    right: 0;
+}
+
+.bottom-line {
+    left: 0;
+    bottom: 0;
+}
+
+.top-circle {
+    top: -100px;
+    left: 40px;
+}
+
+.middle-circle {
+    right: 600px;
+    bottom: 400px;
+}
+
+.multiple-lines {
+    width: 97%;
+}
