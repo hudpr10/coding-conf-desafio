@@ -43,7 +43,7 @@
 
 /* Estado de Focus e Hover do Input */
 .input-container input:hover {
-    background-color: var(--neutral-700);
+    background-color: var(--neutral-900);
 }
 
 .input-container input:focus {

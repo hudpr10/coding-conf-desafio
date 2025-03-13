@@ -36,7 +36,11 @@
                     <label for="image" class="input-upload-container">
                         <img class="upload-icon" src="/assets/images/icon-upload.svg" alt="Ícone de Upload">
                         <br>
-                        <span>Arraste e solte ou clique para adicionar</span>
+                        <span class="upload-inside-text">Arraste e solte ou clique para adicionar</span>
+                        <div class="buttons-inside-upload-container">
+                            <label class="button-inside-upload" id="remove">Remover Imagem</label>
+                            <label class="button-inside-upload" for="image" id="edit">Mudar Imagem</label>
+                        </div>
                     </label>
                     <input type="file" id="image">
                     <div class="input-suport-text-container">
@@ -46,24 +50,24 @@
                 </div>
                 <div class="input-container">
                     <label for="name">Nome Completo</label>
-                    <input type="text" id="name">
-                    <div class="input-suport-text-container">
+                    <input type="text" id="name" required minlength="5">
+                    <div class="input-suport-text-container invisible">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
                         <span style="color: var(--error);">*Campo Obrigatório</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="email">Endereço de E-mail</label>
-                    <input type="text" id="email" placeholder="exemplo@email.com">
-                    <div class="input-suport-text-container">
+                    <input type="text" id="email" placeholder="exemplo@email.com" required>
+                    <div class="input-suport-text-container invisible">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
                         <span style="color: var(--error);">*Campo Obrigatório</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="githubUser">Usuário do GitHub</label>
-                    <input type="text" id="githubUser" placeholder="@seu_usuario">
-                    <div class="input-suport-text-container">
+                    <input type="text" id="githubUser" placeholder="@seu_usuario" required>
+                    <div class="input-suport-text-container invisible">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
                         <span style="color: var(--error);">*Campo Obrigatório</span>
                     </div>
