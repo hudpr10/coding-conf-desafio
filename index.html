@@ -43,7 +43,7 @@
                         </div>
                     </label>
                     <input type="file" id="image">
-                    <div class="input-suport-text-container">
+                    <div class="input-suport-text-container" id="imageError">
                         <img src="/assets/images/icon-info.svg" alt="Icone de Informação">
                         <span>Adicione sua foto (JPG ou PNG, tamanho máximo 500KB)</span>
                     </div>
@@ -51,25 +51,25 @@
                 <div class="input-container">
                     <label for="name">Nome Completo</label>
                     <input type="text" id="name" required minlength="5">
-                    <div class="input-suport-text-container invisible">
+                    <div class="input-suport-text-container invisible" id="nameError">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
-                        <span style="color: var(--error);">*Campo Obrigatório</span>
+                        <span style="color: var(--error);">O campo não pode ficar vazio!</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="email">Endereço de E-mail</label>
                     <input type="text" id="email" placeholder="exemplo@email.com" required>
-                    <div class="input-suport-text-container invisible">
+                    <div class="input-suport-text-container invisible" id="emailError">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
-                        <span style="color: var(--error);">*Campo Obrigatório</span>
+                        <span style="color: var(--error);">*O campo não pode ficar vazio!</span>
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="githubUser">Usuário do GitHub</label>
-                    <input type="text" id="githubUser" placeholder="@seu_usuario" required>
-                    <div class="input-suport-text-container invisible">
+                    <input type="text" id="githubUser" placeholder="@seu_usuario" required minlength="4">
+                    <div class="input-suport-text-container invisible" id="githubError">
                         <img src="/assets/images/icon-info-error.svg" alt="Icone de Erro">
-                        <span style="color: var(--error);">*Campo Obrigatório</span>
+                        <span style="color: var(--error);">O campo não pode ficar vazio!</span>
                     </div>
                 </div>
                 <button id="submitButton" type="submit">Gerar meu Ticket</button>
