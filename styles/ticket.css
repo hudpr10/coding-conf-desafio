@@ -42,7 +42,7 @@
     align-items: center;
 }
 
-.img-perfil {
+#ticketImg {
     border-radius: 12px;
     width: 80px;
     height: 80px;
@@ -54,8 +54,11 @@
     gap: 8px;
 }
 
-.name-perfil {
+#ticketName {
     font-size: 2rem;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .github-container {
@@ -78,4 +81,54 @@
     font-size: 1.75rem;
 
     transform: rotate(90deg);
+}
+
+@media screen and (max-width: 620px) {
+    .ticket-container {
+        width: 500px;
+    }
+
+    .ticket-img {
+        width: 500px;
+    }
+    
+    .ticket-up-logo-container h2 {
+        font-size: 2rem;
+    }
+    
+    #ticketCode {
+        top: 100px;
+    }
+
+    #ticketName {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .ticket-container {
+        width: 360px;
+    }
+
+    .ticket-img {
+        width: 360px;
+    }
+    
+    #ticketCode {
+        top: 65px;
+        right: -6px;
+    }
+
+    #ticketName {
+        font-size: 1.25rem;
+    }
+
+    #ticketImg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ticket-up-container span {
+        font-size: 0.75rem;
+    }
 }

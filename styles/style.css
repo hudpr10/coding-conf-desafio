@@ -6,6 +6,7 @@
 @import url("button.css");
 @import url("uploadInput.css");
 @import url("ticket.css");
+@import url("svgDetails.css");
 
 :root {
     --neutral-0: #fff;
@@ -29,6 +30,16 @@
 }
 
 /* Estilização da Página e do Fundo */
+html {
+    position: relative;
+
+    background-image: url("/assets/images/background-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
 .main-container {
     font-family: "Inconsolata", monospace;
     color: var(--neutral-0);
@@ -37,42 +48,17 @@
     flex-direction: column;
     gap: 24px;
     align-items: center;
-
-    background-image: url("/assets/images/background-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    height: 100vh;
+    
+    margin: 0 auto;
+    padding: 24px 0;
+    
+    position: relative;
+    z-index: 1;
 }
 
-.background-details {
-    position: absolute;
-    pointer-events: none;
-}
-
-.top-line {
-    top: 40px;
-    right: 0;
-}
-
-.bottom-line {
-    left: 0;
-    bottom: 0;
-}
-
-.top-circle {
-    top: -100px;
-    left: 40px;
-}
-
-.middle-circle {
-    right: 600px;
-    bottom: 400px;
-}
-
-.multiple-lines {
-    width: 97%;
-    height: 100vh;
+.header-container {
+    position: relative;
+    z-index: 0;
 }
 
 .invisible {

@@ -7,13 +7,15 @@
     <title>Coding Conf</title>
 </head>
 <body>
-    <main class="main-container">
-        <img class="background-details top-circle" src="/assets/images/pattern-circle.svg">
-        <img class="background-details top-line" src="/assets/images/pattern-squiggly-line-top.svg">
-        <img class="background-details multiple-lines"  src="/assets/images/pattern-lines.svg">
-        <img class="background-details middle-circle" src="/assets/images/pattern-circle.svg">
-        <img class="background-details bottom-line" src="/assets/images/pattern-squiggly-line-bottom-desktop.svg">
+    <!-- Desenhos para completar o background -->
+    <header class="header-container">
+        <div class="svg-details multiple-lines"></div>
+        <div class="svg-details top-circle"></div>
+        <div class="svg-details top-line"></div>
+        <div class="svg-details middle-circle"></div>
+    </header>
 
+    <main class="main-container">
         <section class="logo-container">
             <img src="/assets/images/logo-mark.svg" alt="Logo da Coding Conf">
             <span>Coding Conf</span>
@@ -25,7 +27,7 @@
         </section>
 
         <section class="ticket-container">
-            <img src="/assets/images/pattern-ticket.svg">
+            <img class="ticket-img" src="/assets/images/pattern-ticket.svg">
             <div class="ticket-up-container">
                 <div class="ticket-up-logo-container">
                     <img src="/assets/images/logo-mark.svg" alt="Logo da Coding Conf">
@@ -34,9 +36,9 @@
                 <span>31 de Janeiro, 2025 / São Paulo, SP</span>
             </div>
             <div class="ticket-down-container">
-                <img id="ticketImg" class="img-perfil" src="" alt="Foto de Perfil Enviada ao Adiquirir o Ticket">
+                <img id="ticketImg" alt="Foto de Perfil Enviada ao Adiquirir o Ticket">
                 <div class="perfil-texts-container">
-                    <span class="name-perfil" id="ticketName">undefined</span>
+                    <span id="ticketName">undefined</span>
                     <div class="github-container">
                         <img src="/assets/images/icon-github.svg" alt="Logo do Github">
                         <span id="ticketGithub">@undefined</span>
@@ -46,6 +48,8 @@
             <span id="ticketCode">#00000</span>
         </section>
     </main>
+
+    <div class="svg-details bottom-line"></div>
 
     <script src="../js/insertData.js"></script>
 </body>
