@@ -20,8 +20,8 @@
         </section>
 
         <section class="text-container">
-            <h1>Parabéns, Hudson Reis!<br>Seu ticket está pronto.</h1>
-            <p>Já enviamos seu ticket para o email<br><strong>husdon@email.com</strong> e vamos te atualizar até o evento.</p>
+            <h1>Parabéns, <strong class="gradient" id="textName">undefined!</strong><br>Seu ticket está pronto.</h1>
+            <p>Já enviamos seu ticket para o email<br><strong class="orange" id="textEmail">undefined@undefined.com</strong> e vamos te atualizar até o evento.</p>
         </section>
 
         <section class="ticket-container">
@@ -34,17 +34,19 @@
                 <span>31 de Janeiro, 2025 / São Paulo, SP</span>
             </div>
             <div class="ticket-down-container">
-                <img class="img-perfil" src="/assets/images/image-avatar.jpg" alt="Foto de Perfil Enviada ao Adiquirir o Ticket">
+                <img id="ticketImg" class="img-perfil" src="" alt="Foto de Perfil Enviada ao Adiquirir o Ticket">
                 <div class="perfil-texts-container">
-                    <span class="name-perfil">Hudson Reis</span>
+                    <span class="name-perfil" id="ticketName">undefined</span>
                     <div class="github-container">
                         <img src="/assets/images/icon-github.svg" alt="Logo do Github">
-                        <span>@hudpr10</span>
+                        <span id="ticketGithub">@undefined</span>
                     </div>
                 </div>
             </div>
-            <span class="ticket-code">#00000</span>
+            <span id="ticketCode">#00000</span>
         </section>
     </main>
+
+    <script src="../js/insertData.js"></script>
 </body>
 </html>

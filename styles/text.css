@@ -10,3 +10,20 @@
     margin-top: 16px;
     color: var(--gray-font);
 }
+
+.gradient {
+    /* Aplica o gradiente no fundo do texto */
+    background-image: linear-gradient(to left, var(--neutral-0), var(--orange-500));
+
+    /* Recorta o fundo, deixando apenas o fundo do texto colorido */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Deixa o texto transparente para exibir o fundo */
+    -webkit-text-fill-color: transparent;
+}
+
+.orange {
+    font-weight: 500;
+    color: var(--orange-500);
+}
